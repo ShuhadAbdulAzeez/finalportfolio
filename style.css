@@ -1,0 +1,479 @@
+
+/* navbar*/
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 100%;
+    width: 85%;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.nav1{
+    height: 100%;
+    width: 50%;
+    background-color: aliceblue;
+
+}
+.navtext h1{
+    font-size: 25px;
+    color: beige;
+    color: cadetblue;
+    font-style: oblique;
+
+}
+
+.nav2{
+    height: 100%;
+    width: 50%;
+    background-color: aliceblue;
+
+}
+
+.nav2 ul{
+    display: flex;
+    margin: 5px;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: cadetblue;
+    font-style: oblique;
+    font-size: 25px;
+}
+
+/*header*/
+
+.header{
+    height: 750px;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    display: flex;
+}
+.container3{
+    height: 100%;
+    width: 85%;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.head1{
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    display: flex;
+}
+.photo{
+    height: 450px;
+    width: 450px;
+    background-color:aliceblue ;
+    margin-top: 55px;
+    border-radius: 50%;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.head2{
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    
+}
+
+.text{
+    height: 250px;
+    width: 550px;
+    background-color:aliceblue ;
+    margin-top: 180px;
+}
+
+.text h1{
+    color: cadetblue;
+    font-size: 40px;
+    font-style: italic;
+}
+
+/*service*/
+
+.services{
+    height: 750px;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    display: flex;
+}
+
+.container1{
+    height: 100%;
+    width: 85%;
+    background-color: aliceblue;
+}
+
+.serv{
+    height: 55px;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    display: flex;
+}
+
+.serv h1{
+    font-size: 35px;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: cadetblue;
+}
+.service-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.service {
+    margin: 5px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: cadetblue;
+}
+
+.service i{
+    font-size: 40px;
+}
+.service:hover{
+    border: 2px solid silver;
+    cursor: pointer;
+}
+
+/*portfolios*/
+
+.portfolios{
+    height: 750px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.container2{
+    height: 100%;
+    width: 85%;
+    background-color: aliceblue;
+    
+}
+.port{
+    height: 55px;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    display: flex;
+}
+
+.port h1{
+    font-size: 35px;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: cadetblue;
+}
+
+.port1{
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+    margin: 2px;
+}
+
+.potfolio-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio{
+    height: 480px;
+    width: 1000px;
+    background-color: aliceblue;
+    margin-top: 50px;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfo{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    
+}
+
+.portfo img{
+    height: 100%;
+    width: 100%;
+    transition: transform .2s; /* Animation */
+}
+
+.portfo img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*media quary sizes
+
+Mobile (Smartphone) max-width: 480px.
+Low Resolution Tablets and ipads max-width: 767px.
+Tablets Ipads portrait mode max-width:1024px.
+Desktops max-width:1280px.
+Huge size (Larger screen) max-width: 1281px and greater.*/
+
+
+
+@media screen and (min-width: 100px)and (max-width: 480px){
+
+    .services{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .service-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container3{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        flex-direction: column;
+    }
+    .header{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+    }
+    
+    
+    .head2{
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+        
+    }
+    .text{
+        height: 250px;
+        width: 100%;
+        background-color:aliceblue ;
+        margin-top: 50px;
+    }
+    .text h1{
+        color: cadetblue;
+        font-size: 30px;
+        font-style: italic;
+    }
+    .head1{
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+    }
+    .photo{
+        height: 400px;
+        width: 400px;
+        background-color:aliceblue ;
+        border-radius: 50%;
+    }
+    .portfolios{
+        height: 100%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio{
+        height: 100%;
+        background-color: aliceblue;
+        margin-top: 50px;
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+     
+     
+
+    
+}
+
+@media screen and (min-width: 481px)and (max-width: 767px){
+
+    .services{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .service-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container3{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        flex-direction: column;
+    }
+    .header{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+    }
+    
+    
+    .head2{
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+        
+    }
+    .text{
+        height: 250px;
+        width: 100%;
+        text-align: center;
+        background-color:aliceblue ;
+        margin-top: 50px;
+    }
+    .text h1{
+        color: cadetblue;
+        font-size: 45px;
+        font-style: italic;
+    }
+    .head1{
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+    }
+    .photo{
+        height: 400px;
+        width: 400px;
+        background-color:aliceblue ;
+        border-radius: 50%;
+    }
+    .portfolios{
+        height: 100%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio{
+        height: 100%;
+        background-color: aliceblue;
+        margin-top: 50px;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+    
+     
+     
+
+    
+}
+
+@media screen and (min-width: 767px)and (max-width: 1024px){
+
+    .services{
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .service-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container3{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        flex-direction: column;
+    }
+    .header{
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+        justify-content: center;
+        display: flex;
+    }
+    
+    
+    .head2{
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+        
+    }
+    .text{
+        height: 250px;
+        width: 100%;
+        background-color:aliceblue ;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .text h1{
+        color: cadetblue;
+        font-size: 30px;
+        font-style: italic;
+    }
+    .head1{
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+    }
+    .photo{
+        height: 350px;
+        width: 350px;
+        background-color:aliceblue ;
+        border-radius: 50%;
+    }
+    .portfolios{
+        height: 100%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio{
+        height: 100%;
+        background-color: aliceblue;
+        margin-top: 50px;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+    
+     
+     
+
+    
+}
+    
