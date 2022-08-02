@@ -247,6 +247,38 @@ Huge size (Larger screen) max-width: 1281px and greater.*/
 
 @media screen and (min-width: 100px)and (max-width: 480px){
 
+    .nav1{
+        margin-left: 100px;
+        text-align: center;
+    
+    }
+
+    .nav2{
+        display: none;
+    
+    }
+
+    .text{
+        height: 250px;
+        width: 550px;
+        background-color:aliceblue ;
+        text-align: center;
+    }
+
+    .photo{
+        height: 150px;
+        width: 150px;
+        background-color:aliceblue ;
+        margin-top: 55px;
+        border-radius: 50%;
+    }
+    .photo img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+
     .services{
         height: 100%;
         width: 100%;
@@ -324,6 +356,16 @@ Huge size (Larger screen) max-width: 1281px and greater.*/
 }
 
 @media screen and (min-width: 481px)and (max-width: 767px){
+
+    .nav1{
+        margin-left: 100px;
+        text-align: center;
+    
+    }
+
+    .nav2{
+        display: none;
+    }
 
     .services{
         height: 100%;
