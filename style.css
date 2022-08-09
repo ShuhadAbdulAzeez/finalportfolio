@@ -1,55 +1,131 @@
 
 /* navbar*/
 
-.navbar{
-    height: 70px;
+.navbar {
     width: 100%;
-    background-color: aliceblue;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .container {
+    width: 80%;
+    height: 100%;
+  }
+
+  .wrapper{
+    display: none;
+  }
+  
+  .wrapper .icon{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .wrapper .icon span{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  }
+
+  .wrapper .icon span i{
+    font-size: 20px;
+    line-height: 50px;
+    margin: 2px;
+    color: cadetblue;
+  }
+
+  .wrapper .icon .toolship{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: cadetblue;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+
+  }
+
+  .wrapper .icon:hover .toolship{
+    opacity: 1;
+    pointer-events: auto;
+    top: -70px;
+  }
+
+  .wrapper .icon .toolship::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 35%;
+    transform: translateX(50%) rotate(45deg);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-items {
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
-}
-
-.container{
-    height: 100%;
-    width: 85%;
-    background-color: aliceblue;
+    align-items: center;
+  }
+  
+  
+  .nav-items ul {
     display: flex;
-}
-
-.nav1{
-    height: 100%;
-    width: 50%;
-    background-color: aliceblue;
-
-}
-.navtext h1{
-    font-size: 25px;
-    color: beige;
-    color: cadetblue;
-    font-style: oblique;
-
-}
-
-.nav2{
-    height: 100%;
-    width: 50%;
-    background-color: aliceblue;
-
-}
-
-.nav2 ul{
-    display: flex;
-    margin: 5px;
-    gap: 35px;
     list-style: none;
-}
+    gap: 10px;
+  }
+  .hamburger{
+    display: none;
+  }
 
-.nav2 a{
-    text-decoration: none;
+  .icons{
+    display: flex;
+  }
+
+  .icons i{
+    font-size: 30px;
     color: cadetblue;
-    font-style: oblique;
-    font-size: 25px;
-}
+    display: none;
+
+  }
+  
+  .bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: black;
+  }
 
 /*header*/
 
@@ -75,8 +151,8 @@
     display: flex;
 }
 .photo{
-    height: 450px;
-    width: 450px;
+    height: 350px;
+    width: 350px;
     background-color:aliceblue ;
     margin-top: 55px;
     border-radius: 50%;
@@ -245,19 +321,77 @@ Huge size (Larger screen) max-width: 1281px and greater.*/
 
 
 
-@media screen and (min-width: 100px)and (max-width: 480px){
+@media screen and (min-width: 100px)and (max-width: 580px){
 
-    .nav1{
-        margin-left: 100px;
-        text-align: center;
+
+    .navbar {
+        position: absolute;
+        position: fixed;
+        bottom: 0rem;
+        z-index:100;
+        left: -20%;
+        padding: -20px;
+        background-color: #fff;
+        padding-right: 500px;
+        justify-content: center;
+        
     
-    }
+         
+      }
 
-    .nav2{
+      .wrapper{
+        display: inline-flex;
+      }
+
+      .nav-items ul {
         display: none;
-    
-    }
+        list-style: none;
+        gap: 10px;
+      }
 
+
+      .icons{
+        display: flex;
+        gap: 60px;
+        
+      }
+      .icons i:hover{
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        transition: .5s;
+      }
+
+      .icons i{
+         display: block;
+        }
+      
+
+     
+
+    /* .nav-menu{
+        position: fixed;
+        z-index:100;
+        bottom: 6vh;
+        left: -100%;
+        padding: -20px;
+        display: none;
+        flex-direction: column;
+        background-color: aqua;
+        padding-right: 500px;
+      }
+     */
+      .nav-menu.active{
+        right: 0;
+      }
+    
+      .hamburger{
+        display: none;
+        margin-left: 100px;
+      }
+    
+      .banner{
+        background-position-x: -800px;
+      }
     .text{
         height: 250px;
         width: 550px;
