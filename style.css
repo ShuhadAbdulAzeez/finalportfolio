@@ -7,6 +7,15 @@
     display: flex;
     justify-content: space-around;
   }
+
+  .nav-menu li a{
+    color: cadetblue;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-left: 10px;
+  }
   
   .container {
     width: 80%;
